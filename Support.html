@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Air Violin — Support</title>
+  <meta name="description" content="Support page for Air Violin (iOS). Get help, troubleshooting tips, and contact information." />
+  <style>
+    :root { color-scheme: light dark; }
+    body{
+      margin:0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+      line-height:1.5; background:#0b0c10; color:#e9eef6;
+    }
+    a{ color: inherit; }
+    .wrap{ max-width: 880px; margin: 0 auto; padding: 28px 18px 60px; }
+    .card{
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px; padding: 18px; margin: 14px 0;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+    }
+    .hero{ display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 10px 12px; border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-weight: 600;
+    }
+    h1{ font-size: 34px; margin: 8px 0 0; }
+    h2{ font-size: 18px; margin: 0 0 10px; }
+    p{ margin: 8px 0; opacity: 0.95; }
+    .muted{ opacity:0.75; }
+    ul{ margin: 10px 0 0 20px; }
+    code{
+      font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,"Courier New",monospace;
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px; border-radius: 8px;
+    }
+    .btn{
+      display:inline-block; padding: 10px 14px; border-radius: 12px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.16);
+      text-decoration:none; font-weight:600;
+      margin-top: 10px;
+    }
+    .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    footer{ margin-top: 26px; opacity: 0.7; font-size: 13px; }
+    @media (prefers-color-scheme: light) {
+      body{ background:#f6f7fb; color:#101828; }
+      .card{ background:#ffffff; border:1px solid rgba(16,24,40,0.10); box-shadow: 0 8px 20px rgba(16,24,40,0.08); }
+      code{ background: rgba(16,24,40,0.06); }
+      .badge{ background: rgba(16,24,40,0.04); border:1px solid rgba(16,24,40,0.08); }
+      .btn{ background: rgba(16,24,40,0.06); border:1px solid rgba(16,24,40,0.10); }
+      p{ opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="hero">
+        <div class="badge">🎻 Air Violin</div>
+        <div class="badge">Support</div>
+      </div>
+      <h1>Help & Support</h1>
+      <p class="muted">
+        Need help with Air Violin? You’ll find answers below. If you still need support, email us and we’ll reply as soon as possible.
+      </p>
+      <a class="btn" href="mailto:pendrawapp@gmail.com?subject=Air%20Violin%20Support">Contact Support</a>
+      <p class="muted" style="margin-top:10px;">
+        Support email: <a href="mailto:pendrawapp@gmail.com">pendrawapp@gmail.com</a>
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Quick Start</h2>
+        <ul>
+          <li>Tap <strong>Start</strong>.</li>
+          <li>Tilt your phone to change notes (pitch angle).</li>
+          <li>Move your arm as if the phone is the bow to produce sound.</li>
+          <li>Move faster for higher volume. Stop moving to stop sound.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Pitch → Note Mapping</h2>
+        <p class="muted">The app uses your phone’s pitch angle (in degrees):</p>
+        <ul>
+          <li><strong>−90° to −30°</strong> → Note 1</li>
+          <li><strong>−30° to 10°</strong> → Note 2</li>
+          <li><strong>10° to 50°</strong> → Note 3</li>
+          <li><strong>50° to 90°</strong> → Note 4</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>No sound?</strong> Turn your volume up and disable Silent Mode.</li>
+          <li><strong>Still no sound?</strong> Close the app and reopen it, then tap Start again.</li>
+          <li><strong>Sound cuts out?</strong> Keep moving your arm (bowing motion) — the app silences when motion is below threshold.</li>
+          <li><strong>Note switching feels jumpy?</strong> Try slower tilts near the boundaries.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>FAQ</h2>
+        <p><strong>Does the app record audio?</strong><br/>No. Air Violin does not record or store audio.</p>
+        <p><strong>Does the app collect data?</strong><br/>No personal data is collected. Motion processing happens on-device.</p>
+        <p><strong>Do I need extra hardware?</strong><br/>No. Just your iPhone and its sensors.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>
+        Air Violin uses motion sensors (device orientation and movement) to control sound. All processing happens locally on your device.
+        We do not collect, sell, or share personal information.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Include this page as your App Support URL</h2>
+      <p class="muted">
+        Host this file with GitHub Pages:
+      </p>
+      <ol>
+        <li>Create a GitHub repo (e.g., <code>air-violin-support</code>).</li>
+        <li>Add this file as <code>index.html</code>.</li>
+        <li>Repo Settings → Pages → Deploy from Branch → <code>main</code> / <code>root</code>.</li>
+        <li>Copy the GitHub Pages link and paste it into App Store Connect as your Support URL.</li>
+      </ol>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Air Violin. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
