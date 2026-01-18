@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Air Violin — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Air Violin iOS app." />
+  <style>
+    :root { color-scheme: light dark; }
+    body{
+      margin:0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+      line-height:1.6; background:#0b0c10; color:#e9eef6;
+    }
+    a{ color: inherit; }
+    .wrap{ max-width: 880px; margin: 0 auto; padding: 28px 18px 60px; }
+    .card{
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px; padding: 20px; margin: 14px 0;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+    }
+    h1{ font-size: 34px; margin: 8px 0 12px; }
+    h2{ font-size: 20px; margin: 18px 0 8px; }
+    p{ margin: 8px 0; opacity: 0.95; }
+    ul{ margin: 10px 0 0 20px; }
+    .muted{ opacity:0.75; }
+    footer{ margin-top: 26px; opacity: 0.7; font-size: 13px; }
+    @media (prefers-color-scheme: light) {
+      body{ background:#f6f7fb; color:#101828; }
+      .card{ background:#ffffff; border:1px solid rgba(16,24,40,0.10); box-shadow: 0 8px 20px rgba(16,24,40,0.08); }
+      p{ opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: <span id="date"></span></p>
+
+      <p>
+        This Privacy Policy explains how <strong>Air Violin</strong> handles information when you use the app.
+        Your privacy is important, and the app is designed to work without collecting personal data.
+      </p>
+
+      <h2>Information We Do Not Collect</h2>
+      <p>
+        Air Violin does <strong>not</strong> collect, store, or share any personal information.
+        Specifically, the app does not collect:
+      </p>
+      <ul>
+        <li>Name, email address, or contact information</li>
+        <li>Location data</li>
+        <li>Audio recordings</li>
+        <li>Usage analytics or tracking identifiers</li>
+        <li>Device identifiers for advertising or profiling</li>
+      </ul>
+
+      <h2>Motion Sensor Usage</h2>
+      <p>
+        Air Violin uses your device’s built-in motion sensors (such as orientation and movement)
+        to control sound in real time. This data is processed <strong>locally on your device only</strong>
+        and is never stored or transmitted.
+      </p>
+
+      <h2>Audio</h2>
+      <p>
+        The app generates sound based on your movements. No audio is recorded, saved, or sent outside
+        your device.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <p>
+        Air Violin does not use third-party analytics, advertising SDKs, or external services
+        that collect user data.
+      </p>
+
+      <h2>Children’s Privacy</h2>
+      <p>
+        Air Violin does not knowingly collect any personal information from children.
+        Because the app does not collect data at all, it is safe to use for all ages.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        If the app’s privacy practices change in the future, this Privacy Policy will be updated
+        accordingly. Any changes will be posted on this page.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about this Privacy Policy, you can contact us at:
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:pendrawapp@gmail.com">pendrawapp@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Air Violin. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    const d = new Date();
+    document.getElementById("year").textContent = d.getFullYear();
+    document.getElementById("date").textContent = d.toLocaleDateString();
+  </script>
+</body>
+</html>
